@@ -1,0 +1,104 @@
+body {
+    background-image: url(sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+  }
+
+
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+  .grid-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    filter: grayscale(100%);
+    border-radius: 10%;
+
+      
+  }
+
+  .grid-item:hover {
+    filter: grayscale(0%);
+  }
+
+
+  .name {
+    text-align: center;
+    background-color:darkgrey;
+    border-style: dotted;
+    padding: 5px;
+
+  }
+.pic {
+    margin-top: 0;
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 10%;
+}
+
+.input {
+    height: 30px;
+    width: auto;
+    padding: 10px 10px;
+    
+}
+
+form {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bgen {
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10%;
+
+}
+
+.types {
+    background-color: aliceblue;
+    font-size: 14px;
+
+}
+
+.id {
+    color: aliceblue;
+    position: absolute;
+    background-color: black;
+}
+
