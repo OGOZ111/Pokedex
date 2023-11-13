@@ -64,11 +64,15 @@ h1 {
 }
 
 .input {
+  display: "";
+
     height: 30px;
     width: auto;
     padding: 10px 10px;
     
 }
+
+
 
 form {
     text-align: center;
@@ -101,4 +105,12 @@ form {
     position: absolute;
     background-color: black;
 }
+
+#change-text{
+  color: white;
+  text-align: center;
+}
+
+
+
 
