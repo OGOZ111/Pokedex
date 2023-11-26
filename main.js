@@ -21,6 +21,7 @@ const content = document.querySelector(".grid-container");
 
 bgens.forEach((bgen, i) => {
   bgen.addEventListener("click", () => shownum(i));
+
 });
 
 function shownum(i) {
@@ -28,6 +29,10 @@ function shownum(i) {
   const offset = generations[i].offset;
   fetchData(limit, offset);
 }
+
+
+
+
 
 const generations = [
   { id: 0, limit: 151, offset: 0 },
