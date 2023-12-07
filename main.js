@@ -21,18 +21,17 @@ const content = document.querySelector(".grid-container");
 
 bgens.forEach((bgen, i) => {
   bgen.addEventListener("click", () => shownum(i));
-
 });
+
+function showdisplay() {
+  content.classList.add("active");
+}
 
 function shownum(i) {
   const limit = generations[i].limit;
   const offset = generations[i].offset;
   fetchData(limit, offset);
 }
-
-
-
-
 
 const generations = [
   { id: 0, limit: 151, offset: 0 },
@@ -114,42 +113,51 @@ const searchFiltered = () => {
 searchFiltered();
 fetchData();
 
-// Event listeners. Way too much code but does the job
+// Event listeners to display gen amounts. Way too much code for my liking but it does function as intended.
 
 press1.addEventListener("click", function () {
   changeText.textContent = "There are 151 Pokemon in Generation 1!";
+  showdisplay();
 });
 
 press2.addEventListener("click", function () {
   changeText.textContent = "There are 100 Pokemon in Generation 2!";
+  showdisplay();
 });
 
 press3.addEventListener("click", function () {
   changeText.textContent = "There are 135 Pokemon in Generation 3!";
+  showdisplay();
 });
 
 press4.addEventListener("click", function () {
   changeText.textContent = "There are 107 Pokemon in Generation 4!";
+  showdisplay();
 });
 
 press5.addEventListener("click", function () {
   changeText.textContent = "There are 156 Pokemon in Generation 5!";
+  showdisplay();
 });
 
 press6.addEventListener("click", function () {
   changeText.textContent = "There are 72 Pokemon in Generation 6!";
+  showdisplay();
 });
 
 press7.addEventListener("click", function () {
   changeText.textContent = "There are 88 Pokemon in Generation 7!";
+  showdisplay();
 });
 
 press8.addEventListener("click", function () {
   changeText.textContent = "There are 96 Pokemon in Generation 8!";
+  showdisplay();
 });
 
 press9.addEventListener("click", function () {
   changeText.textContent = "There are 112 Pokemon in Generation 9!";
+  showdisplay();
 });
 
 input.addEventListener("keyup", function () {
